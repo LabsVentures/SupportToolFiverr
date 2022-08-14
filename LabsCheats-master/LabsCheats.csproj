@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\ethan\OneDrive\Desktop\Support_Tool.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBB1A52E-CA82-4129-93C4-B2F72623C958}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Support Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>lmitp</RootNamespace>
+	<DisableOutOfProcTaskHost>true</DisableOutOfProcTaskHost>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+	<DisableOutOfProcTaskHost>true</DisableOutOfProcTaskHost>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+	<DisableOutOfProcTaskHost>true</DisableOutOfProcTaskHost>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SupportTool\Properties\Resources.cs" />
+    <Compile Include="SupportTool\Properties\Settings.cs" />
+    <Compile Include="cleaners.cs" />
+    <Compile Include="gameboosters.cs" />
+    <Compile Include="anticv.cs" />
+    <Compile Include="controls.cs" />
+    <Compile Include="windowssettings.cs" />
+    <Compile Include="redist.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="systeminfo.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="anticv.resx" />
+    <EmbeddedResource Include="cleaners.resx" />
+    <EmbeddedResource Include="controls.resx" />
+    <EmbeddedResource Include="gameboosters.resx" />
+    <EmbeddedResource Include="Main.resx" />
+    <EmbeddedResource Include="redist.resx" />
+    <EmbeddedResource Include="SupportTool\Programs\dControl.exe" />
+    <EmbeddedResource Include="SupportTool\Programs\dxwebsetup.exe" />
+    <EmbeddedResource Include="SupportTool\Programs\revosetup.exe" />
+    <EmbeddedResource Include="SupportTool\Programs\temp.exe" />
+    <EmbeddedResource Include="SupportTool\Programs\vcredist_15\22_x64.exe" />
+    <EmbeddedResource Include="SupportTool\Programs\vcredist_15\22_x86.exe" />
+    <EmbeddedResource Include="SupportTool\Programs\vcredist_2013_x64.exe" />
+    <EmbeddedResource Include="SupportTool\Programs\vcredist_2013_x86.exe" />
+    <EmbeddedResource Include="SupportTool\Programs\Wub.exe" />
+    <EmbeddedResource Include="SupportTool\Properties\Resources.resx" />
+    <EmbeddedResource Include="systeminfo.resx" />
+    <EmbeddedResource Include="windowssettings.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
